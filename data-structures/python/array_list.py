@@ -57,7 +57,7 @@ class ArrayList:
         """
         for i in range(self.size):
             if(self.array[i]==value):
-                self.array[i]=None
+                self.array[i]=(-1)
                 break
     
     def get_array(self):
@@ -71,7 +71,7 @@ class ArrayList:
         """
         return_array = []
         for i in range(self.size):
-            if(self.array[i]!=None):
+            if(self.array[i]!=None and self.array[i]!=(-1)):
                 return_array.append(self.array[i])
         return(return_array)
 
@@ -94,6 +94,7 @@ class Driver:
         array_list.insert(32)
         array_list.insert(5)
         array_list.remove(32)
+        array_list.insert(6)
         print(array_list.array)
         print(array_list.get_array())
 
