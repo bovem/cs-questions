@@ -8,10 +8,8 @@ class Node:
     ----------
     value : int
         Integer value
-    
-    Methods
-    -------
-
+    next_node: Node
+        Next Node in chain
     """
     def __init__(self, value=None, next_node=None):
         self.value = value
@@ -25,7 +23,7 @@ class LinkedList:
     Attributes
     ----------
     head : Node
-        Node object. The first node in chain
+        Node object. The first node in the chain.
     
     Methods
     -------
