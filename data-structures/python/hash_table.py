@@ -8,7 +8,7 @@ class Node:
     ----------
     value : int
         Integer value
-    nextNode: Node
+    next: Node
         Next Node in chain
     """
     def __init__(self, value=None, nextNode=None):
